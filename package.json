@@ -1,5 +1,5 @@
 {
-  "name": "snarkdown",
+  "name": "@bpmn-io/snarkdown",
   "description": "Transform Markdown into HTML.",
   "version": "2.0.0",
   "main": "./dist/snarkdown.js",
@@ -15,6 +15,9 @@
     "prepublish": "npm run -s build",
     "release": "npm run -s build && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "authors": [
     "Jason Miller <jason@developit.ca>"
   ],
@@ -23,8 +26,8 @@
     "dist",
     "snarkdown.d.ts"
   ],
-  "homepage": "https://github.com/developit/snarkdown",
-  "repository": "developit/snarkdown",
+  "homepage": "https://github.com/bpmn-io/snarkdown",
+  "repository": "bpmn-io/snarkdown",
   "license": "MIT",
   "keywords": [
     "markdown",
