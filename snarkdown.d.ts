@@ -1,4 +1,4 @@
-declare module "snarkdown" {
+declare module "@bpmn-io/snarkdown" {
   interface Links {
     [index: string]: string;
   }
