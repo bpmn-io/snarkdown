@@ -1,10 +1,13 @@
+> A fork of [snarkdown](https://github.com/developit/snarkdown) with [some fixes applied](https://github.com/developit/snarkdown/compare/master...bpmn-io:master).
+
+
 <p align="center">
   <img src="https://cdn.jsdelivr.net/emojione/assets/svg/1f63c.svg" width="256" height="256" alt="Snarkdown">
 </p>
 <h1 align="center">
   Snarkdown
-  <a href="https://www.npmjs.org/package/snarkdown">
-    <img src="https://img.shields.io/npm/v/snarkdown.svg?style=flat" alt="npm">
+  <a href="https://www.npmjs.org/package/@bpmn-io/snarkdown">
+    <img src="https://img.shields.io/npm/v/@bpmn-io/snarkdown.svg?style=flat" alt="npm">
   </a>
 </h1>
 
@@ -33,10 +36,10 @@ It's designed to be as minimal as possible, for constrained use-cases where a fu
 
 Snarkdown exports a single function, which parses a string of Markdown and returns a String of HTML. Couldn't be simpler.
 
-The snarkdown module is available in [every module format](https://unpkg.com/snarkdown/dist/) you'd ever need: ES Modules, CommonJS, UMD...
+The snarkdown module is available in [every module format](https://unpkg.com/@bpmn-io/snarkdown/dist/) you'd ever need: ES Modules, CommonJS, UMD...
 
 ```js
-import snarkdown from 'snarkdown';
+import snarkdown from '@bpmn-io/snarkdown';
 
 let md = '_this_ is **easy** to `use`.';
 let html = snarkdown(md);
