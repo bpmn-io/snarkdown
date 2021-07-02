@@ -53,6 +53,11 @@ describe('snarkdown()', () => {
 			expect(snarkdown('[Example](#example)')).to.equal('<a href="#example">Example</a>');
 		});
 
+		it('parses link by angle bracket syntax', () => {
+			expect(snarkdown('<https://github.com>')).to.equal('<a href="https://github.com">https://github.com</a>');
+			expect(snarkdown('<mailto:foo-bar>')).to.equal('<a href="mailto:foo-bar">mailto:foo-bar</a>');
+		});
+
 		it('parses images', () => {
 			expect(snarkdown('![title](foo.png)')).to.equal('<img src="foo.png" alt="title">');
 			expect(snarkdown('![](foo.png)')).to.equal('<img src="foo.png" alt="">');
