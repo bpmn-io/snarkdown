@@ -9,6 +9,7 @@
   <a href="https://www.npmjs.org/package/@bpmn-io/snarkdown">
     <img src="https://img.shields.io/npm/v/@bpmn-io/snarkdown.svg?style=flat" alt="npm">
   </a>
+  <a href="https://github.com/bpmn-io/snarkdown/actions?query=workflow%3ACI"><img src="https://github.com/bpmn-io/snarkdown/workflows/CI/badge.svg" alt="Build Status" style="max-width:100%;"></a>
 </h1>
 
 Snarkdown is a dead simple **1kb** [Markdown] parser.
