@@ -9,6 +9,7 @@
   "unpkg": "./dist/snarkdown.umd.js",
   "types": "./snarkdown.d.ts",
   "scripts": {
+    "all": "npm run build && npm run test",
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "eslint src test && NODE_ENV=test mocha --compilers @babel/register",
