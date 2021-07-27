@@ -24,6 +24,14 @@ describe('snarkdown()', () => {
 			expect(snarkdown('I _like_ tiny libraries')).to.equal('I <em>like</em> tiny libraries');
 		});
 
+		it('escapes special formatting', () => {
+			expect(snarkdown('I like tiny\\*libraries')).to.equal('I like tiny*libraries');
+			expect(snarkdown('I like tiny\\_libraries')).to.equal('I like tiny_libraries');
+			expect(snarkdown('I like tiny\\*\\*libraries')).to.equal('I like tiny**libraries');
+			expect(snarkdown('I like tiny\\_\\_libraries')).to.equal('I like tiny__libraries');
+			expect(snarkdown('I like tiny\\~\\~libraries')).to.equal('I like tiny~~libraries');
+		});
+
 	});
 
 	describe('titles', () => {
