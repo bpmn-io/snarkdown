@@ -68,7 +68,7 @@ describe('snarkdown()', () => {
 		});
 
 		it('parses link by angle bracket syntax', () => {
-			expect(snarkdown('<https://github.com>')).to.equal('<a href="https://github.com">https://github.com</a>');
+			expect(snarkdown('<https://github.com/bpmn_io>')).to.equal('<a href="https://github.com/bpmn_io">https://github.com/bpmn_io</a>');
 			expect(snarkdown('<mailto:foo-bar>')).to.equal('<a href="mailto:foo-bar">mailto:foo-bar</a>');
 		});
 
