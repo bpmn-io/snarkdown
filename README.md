@@ -1,4 +1,4 @@
-> A fork of [snarkdown](https://github.com/developit/snarkdown) with [some fixes applied](https://github.com/developit/snarkdown/compare/master...bpmn-io:master).
+> A fork of [snarkdown](https://github.com/developit/snarkdown) with [some fixes applied](https://github.com/developit/snarkdown/compare/main...bpmn-io:main).
 
 
 <p align="center">
