@@ -1,7 +1,7 @@
 {
   "name": "@bpmn-io/snarkdown",
   "description": "Transform Markdown into HTML.",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": "./dist/snarkdown.js",
   "module": "./dist/snarkdown.es.js",
   "modern": "./dist/snarkdown.modern.js",
